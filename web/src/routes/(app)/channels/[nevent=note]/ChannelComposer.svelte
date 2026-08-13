@@ -90,7 +90,7 @@
 		}
 	}
 
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	// oxlint-disable-next-line typescript/no-explicit-any
 	async function onEmojiPick({ detail: emoji }: { detail: any }): Promise<void> {
 		if (textarea === undefined) {
 			return;
@@ -194,8 +194,7 @@
 			placeholder={$_('channel.placeholder')}
 			onkeydown={onKeydown}
 			onpaste={paste}
-			ondrop={drop}
-		></textarea>
+			ondrop={drop}></textarea>
 		<button
 			class="send"
 			title="{$_('channel.send')} (Ctrl + Enter)"

@@ -72,7 +72,8 @@ class RemoteSigner {
 			return;
 		}
 		const req = createRxForwardReq();
-		this.#subscription = this.#rxNostr!.use(req)
+		this.#subscription = this.#rxNostr!
+			.use(req)
 			.pipe(uniq())
 			.subscribe(async ({ event: requestEvent }) => {
 				const content = await Signer.decryptNip44(

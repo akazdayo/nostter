@@ -53,7 +53,7 @@
 					onEmojiSelect,
 					custom: buildCustom()
 				});
-				// eslint-disable-next-line svelte/no-dom-manipulating, @typescript-eslint/no-explicit-any
+				// oxlint-disable-next-line typescript/no-explicit-any
 				emojiPicker.appendChild(picker as any);
 				emojiPickerOpen = true;
 			}

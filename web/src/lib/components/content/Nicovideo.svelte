@@ -13,12 +13,11 @@
 
 	run(() => {
 		if (playerElement && playerElement.children.length === 0) {
-			// eslint-disable-next-line @typescript-eslint/no-non-null-asserted-optional-chain
+			// oxlint-disable-next-line typescript/no-non-null-asserted-optional-chain
 			const id = link.href.match(nicovideoRegexp)?.groups?.['id']!;
 			const scriptElement = document.createElement('script');
 			scriptElement.type = 'application/javascript';
 			scriptElement.src = `https://embed.nicovideo.jp/watch/${id}/script`;
-			// eslint-disable-next-line svelte/no-dom-manipulating
 			playerElement.append(scriptElement);
 		}
 	});

@@ -414,7 +414,7 @@
 		mention = undefined;
 	}
 
-	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	// oxlint-disable-next-line typescript/no-explicit-any
 	async function onEmojiPick({ detail: emoji }: { detail: any }): Promise<void> {
 		if (textarea === undefined) {
 			return;
@@ -650,8 +650,7 @@
 				oninput={onInput}
 				onpaste={paste}
 				ondragover={preventDefault(dragover)}
-				ondrop={drop}
-			></textarea>
+				ondrop={drop}></textarea>
 			{#if containsNsec}
 				<div class="warning">{$_('editor.warning.nsec')}</div>
 			{/if}

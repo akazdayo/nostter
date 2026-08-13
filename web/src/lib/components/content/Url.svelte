@@ -10,7 +10,7 @@
 
 	declare global {
 		interface Window {
-			twttr: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+			twttr: any; // oxlint-disable-line typescript/no-explicit-any
 		}
 	}
 

@@ -8,7 +8,7 @@ export interface Media {
 
 export type MediaResult = {
 	url: string;
-	data: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+	data: any; // oxlint-disable-line typescript/no-explicit-any
 };
 
 export function getMediaUploader(): string {
